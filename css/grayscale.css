@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #0000FF;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 html {
@@ -29,24 +29,32 @@ h6 {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
-p {
+h2,h5{
+    color:#ff0000;
+}
+h4{
+     line-height: 2;
+}
+p{
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
+
 @media(min-width:768px) {
-    p {
+    p  {
         margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
+        font-size: 50px;
+        letter-spacing: 0px;
+        line-height: 70px;
     }
 }
 
 a {
-    color:rgba(0, 0, 255, 0.39);
+    color:rgb(0, 0, 255);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -55,7 +63,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #ff0000;
 }
 
 .light {
@@ -67,7 +75,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #A7A9AC;
+    background-color: rgba(167,169,172,.36);
 }
 
 .navbar-custom .navbar-brand {
@@ -137,7 +145,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #A7A9AC;
+        background:rgba(167,169,172,.36);
     }
 }
 
@@ -201,7 +209,7 @@ a:focus {
 
 .btn-circle:hover,
 .btn-circle:focus {
-    outline: 0;
+    outline: #0000FF;
     color: #0000FF;
     background: rgba(255,255,255,.1);
 }
@@ -266,8 +274,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #0000ff;
-    background: url(../img/designshow1.jpg) no-repeat center center scroll;
-    background-color: #A7A9AC;
+/*    background: url(../img/designshow1.jpg) no-repeat center center scroll;
+*/    /*background-color: #A7A9AC;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -279,8 +287,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #0000FF;
-    background: url(../img/designshow2.jpg) no-repeat center center scroll;
-    background-color: #A7A9AC;
+/*    background: url(../img/designshow2.jpg) no-repeat center center scroll;
+*/    /*background-color: #A7A9AC;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -319,17 +327,18 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid:rgba(0, 0, 255, 0.39);
-    color:rgba(0, 0, 255, 0.39);
-    background-color: transparent;
+border: 1px solid;
+border-color: #0018ff;
+color: #ff0000;
+background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid:rgba(0, 0, 255, 0.39);
-    outline: 0;
-    color: #A7A9AC;
-    background-color:rgba(0, 0, 255, 0.39);
+   border: 1px solid;
+border-color: #ff0000;
+color: #0018ff;
+background-color: transparent;
 }
 
 ul.banner-social-buttons {
@@ -355,9 +364,9 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 25px 0;
-    background: url(../img/saicaiga_logo.svg) no-repeat center center scroll;
-    background-color: #A7A9AC;
+    padding: 10px 0;
+    /*background: url(../img/saicaiga_logo.svg) no-repeat center center scroll;*/
+ /*   background-color: #A7A9AC;*/
 
 }
 
@@ -397,45 +406,48 @@ svg {
   height:window.innerHeight;
 }
 
-/*
-g#designB path:hover, g#icB path:hover,
-g#showB path:hover{
-  fill:yellow;
-}
- g#iTB path:hover, g#gaTB path:hover{
-  fill:yellow;
-}
-*/
 
-/*.intro{
-     background-color: #fff;
-     -webkit-animation: random1 5s infinite;
-     animation: random1 5s infinite;
-} */
-rect{
-     fill: #fff;
+
+
+g#designB{
+    fill: #fff;
      -webkit-animation: random 5s infinite;
-     animation: random 5s infinite;
-} 
+     animation: random 5s infinite
+}
+g#showB{
+    fill: #fff;
+     -webkit-animation: random1 5s infinite;
+     animation: random1 5s infinite
+}
 
-
-
-/*
- @keyframes random1{
-    15% { background-color: red; } 
-    30% { background-color: yellow; } 
-    45% { background-color: green; } 
-    60% { background-color: blue; }
-    75% { background-color: white; } 
-} */
 @keyframes random{
-    15% { fill: red; } 
-    30% { fill: yellow; } 
-    45% { fill: green; } 
+    35% { fill: red; }  
+    45% { fill: #000; } 
+    60% { fill: blue; }
+    75% { fill: white; } 
+}
+@keyframes random1{
+    35% { fill: red; }  
+    45% { fill: #A7A9AC; } 
     60% { fill: blue; }
     75% { fill: white; } 
 }
 
 
 
+.red{
+    color:#ff0000;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+    border-top:none;
+
+}
+td {
+      margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
 
